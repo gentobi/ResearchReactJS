@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import TopMenu from './components/topmenu/TopMenu';
 import Header from './components/header/Header';
@@ -109,16 +109,42 @@ class App extends Component {
             <p className = "App-intro" >To get started, edit < code > src / App.js </code> and save to reload.</p>  */}
             <TopMenu></TopMenu>
             <Header></Header>
-            <div className='app-content'>
-                <Content title='For those about to rock...' imagePosition='order-lg-2' image="img/01.jpg"
-                    content='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.'>
-                </Content>
-                <Content title='We salute you!' image="img/02.jpg"
-                    content='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.'>
-                </Content>
-                <Content title='Let there be rock!' imagePosition='order-lg-2' image="img/03.jpg"
-                    content='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.'>
-                </Content>
+            <div className='app-content container'>
+                <div className='row pt-5 pb-5'>
+                    <Content title='For those about to rock...' image="img/01.jpg"
+                        content='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.'>
+                    </Content>
+                    <Content title='We salute you!' image="img/02.jpg"
+                        content='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.'>
+                    </Content>
+                    <Content title='Let there be rock!' image="img/03.jpg"
+                        content='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.'>
+                    </Content>
+                </div>
+                
+                <div className='row pb-5'>
+                    <Content title='We salute you!' image="img/02.jpg"
+                        content='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.'>
+                    </Content>
+                    <Content title='For those about to rock...' image="img/01.jpg"
+                        content='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.'>
+                    </Content>
+                    <Content title='Let there be rock!' image="img/03.jpg"
+                        content='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.'>
+                    </Content>
+                </div>
+
+                <div className='row pb-5'>
+                    <Content title='Let there be rock!' image="img/03.jpg"
+                        content='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.'>
+                    </Content>
+                    <Content title='For those about to rock...' image="img/01.jpg"
+                        content='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.'>
+                    </Content>
+                    <Content title='We salute you!' image="img/02.jpg"
+                        content='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.'>
+                    </Content>
+                </div>
             </div>
             <Footer></Footer>    
         </div>
