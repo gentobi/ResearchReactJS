@@ -7,9 +7,15 @@ class Content extends Component {
     
     onEdit = () => {alert('button Edit was clicked')};
 
-    onRemove =() => {
-        alert("button remove was clicked");
+    onRemove = () => {
+        // alert("button remove was clicked");
+        this.notifyWithOption("message");
     }
+
+    notifyWithOption = (message) =>{
+        alert("Button Remove was clicked: "+message);
+    }
+
     render() {
         return (
             
@@ -36,7 +42,10 @@ class Content extends Component {
                     <div className='row'>
                         <div className='btn btn-group'>
                             <div className='btn btn-info' onClick={this.onEdit}>Edit</div>
-                            <div className='btn btn-warning' onClick={this.onRemove}>Remove</div>
+                            {/* <div className='btn btn-warning' onClick={this.onRemove}>Remove</div> */}
+                            <div className='btn btn-warning' onClick={() => this.onRemove()}>Remove</div>
+                            <div className='btn btn-warning' onClick={() => this.notifyWithOption("this is message with arrow function")}>Remove</div>
+                            <div className='btn btn-warning' onClick={this.notifyWithOption.bind(this,"this is message with bind")}>Remove</div>
                         </div>
                     </div>
                    
