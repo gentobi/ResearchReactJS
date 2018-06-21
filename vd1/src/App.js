@@ -6,6 +6,10 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Content from './components/content/Content';
 import AppRouter from './router/app-router';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
+
+
 // // Component with normal function
 // function One() { 
 //     return (
@@ -90,41 +94,41 @@ class App extends Component {
     }
     
     render() {
-        console.log('Component rendered');
-
         return (
-        <div className = "App" >
-            {/* <header className = "App-header" >
-                <img src = {logo} className = "App-logo"alt = "logo" />
-                <h1 className = "App-title" > React JS App </h1>
-            </header >
-            <One></One>
+            <Router>
+                <div className = "App" >
+                    {/* <header className = "App-header" >
+                        <img src = {logo} className = "App-logo"alt = "logo" />
+                        <h1 className = "App-title" > React JS App </h1>
+                    </header >
+                    <One></One>
 
-            <Two></Two>
+                    <Two></Two>
 
-            <Three></Three>
+                    <Three></Three>
 
-            <Four></Four>
-            
-            <NumberOne title='Super man'></NumberOne>
+                    <Four></Four>
+                    
+                    <NumberOne title='Super man'></NumberOne>
 
-            <NumberOne title='Spider man'></NumberOne>
+                    <NumberOne title='Spider man'></NumberOne>
 
-            <NumberOne title='Iron man'></NumberOne>
+                    <NumberOne title='Iron man'></NumberOne>
 
-            <NumberTwo title="Bat man"></NumberTwo>
+                    <NumberTwo title="Bat man"></NumberTwo>
 
-            <NumberComponent></NumberComponent>
-            <p className = "App-intro" >To get started, edit < code > src / App.js </code> and save to reload.</p>  */}
-            <TopMenu></TopMenu>
-            <Header></Header>
-            {/* Page content */}
-            <div className='app-content container'>
-                <AppRouter></AppRouter>
-            </div>
-            {/* Footer */}
-            <Footer></Footer>    
-        </div>
+                    <NumberComponent></NumberComponent>
+                    <p className = "App-intro" >To get started, edit < code > src / App.js </code> and save to reload.</p>  */}
+                    <TopMenu></TopMenu>
+                    <Header></Header>
+                    {/* Page content */}
+                    <div className='app-content container'>
+                        <AppRouter></AppRouter>
+                    </div>
+                    {/* Footer */}
+                    <Footer></Footer>    
+                </div>
+            </Router>
         );
     }
 }
