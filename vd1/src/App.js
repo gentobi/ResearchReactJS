@@ -3,9 +3,9 @@ import React, {Component} from 'react';
 import './App.css';
 import TopMenu from './components/topmenu/TopMenu';
 import Header from './components/header/Header';
-import Content from './components/content/Content';
 import Footer from './components/footer/Footer';
-
+import Content from './components/content/Content';
+import AppRouter from './router/app-router';
 // // Component with normal function
 // function One() { 
 //     return (
@@ -118,43 +118,11 @@ class App extends Component {
             <p className = "App-intro" >To get started, edit < code > src / App.js </code> and save to reload.</p>  */}
             <TopMenu></TopMenu>
             <Header></Header>
+            {/* Page content */}
             <div className='app-content container'>
-                <div className='row pt-5 pb-5'>
-                    <Content title='For those about to rock...' image="img/01.jpg"
-                        content='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.'>
-                    </Content>
-                    <Content title='We salute you!' image="img/02.jpg"
-                        content='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.'>
-                    </Content>
-                    <Content title='Let there be rock!' image="img/03.jpg"
-                        content='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.'>
-                    </Content>
-                </div>
-                
-                <div className='row pb-5'>
-                    <Content title='We salute you!' image="img/02.jpg"
-                        content='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.'>
-                    </Content>
-                    <Content title='For those about to rock...' image="img/01.jpg"
-                        content='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.'>
-                    </Content>
-                    <Content title='Let there be rock!' image="img/03.jpg"
-                        content='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.'>
-                    </Content>
-                </div>
-
-                <div className='row pb-5'>
-                    <Content title='Let there be rock!' image="img/03.jpg"
-                        content='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.'>
-                    </Content>
-                    <Content title='For those about to rock...' image="img/01.jpg"
-                        content='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.'>
-                    </Content>
-                    <Content title='We salute you!' image="img/02.jpg"
-                        content='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.'>
-                    </Content>
-                </div>
+                <AppRouter></AppRouter>
             </div>
+            {/* Footer */}
             <Footer></Footer>    
         </div>
         );
